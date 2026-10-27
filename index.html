@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CBAM Plant Data: non-EU steel, cement and aluminium plants next to EU CBAM default values</title><meta name="description" content="Every identifiable non-EU steel, cement and aluminium plant, matched to the official CBAM default value for its country and product code, with a modelled emissions intensity and a confidence-labelled gap. One Excel file, ready to filter."><link rel="stylesheet" href="style.css">
+<script>
+/* BUY LINKS - the one place to edit. Paste a Lemon Squeezy checkout URL between the quotes of a pack.
+   An empty string keeps that pack's button on "Coming soon" (disabled). `cbam site` keeps links you set here. */
+const BUY_LINKS = {
+ "all-sectors": "",
+ "steel-global": "",
+ "cement-global": "",
+ "country-chn": "",
+ "country-ind": "",
+ "country-usa": "",
+ "country-tur": "",
+ "country-vnm": "",
+ "country-idn": "",
+ "country-can": "",
+ "country-kor": "",
+ "country-ukr": "",
+ "country-twn": ""
+};
+</script>
+</head><body>
+<header><h1>CBAM Plant Data</h1><p class="tag">Every identifiable non-EU steel, cement and aluminium plant, matched to the official CBAM default value for its country and product code, with a modelled emissions intensity and a confidence-labelled gap. One Excel file, ready to filter.</p>
+<nav><a href="#packs">Packs and prices</a><a href="#sample">Free sample</a><a href="#levels">Confidence levels</a><a href="licence.html">Licence</a><a href="#contact">Contact</a></nav></header>
+<main>
+<div class="box"><strong>Screening data only.</strong> Emissions values are modelled estimates, not verified emissions, and cannot be used for CBAM declarations. This is an independent product and has no connection with the European Union or the European Commission.</div>
+<h2>What it is</h2><p><strong>Who it's for:</strong> CBAM consultants, trade-compliance advisers, analysts and importers who need to decide which supplier plants to ask for real emissions data first.</p>
+<p><strong>What it saves you:</strong> matching plants to the right default value by hand. The Commission's default table has over 100 country sheets, &quot;Other countries&quot; fallbacks, route letters and per-product codes; Climate TRACE has plants but no CBAM product codes. This pack has done that join for 3,110 plants in 117 countries.</p>
+<p><strong>What you see per plant:</strong> location, production route, capacity, a modelled emissions intensity (Climate TRACE), the official default for its country and CN code (with 2026–2028 mark-ups), the gap between the two, and a confidence level for that gap. Of 910 steel plants, 94 have a high-confidence and 695 a medium-confidence gap; of 2,009 cement plants, 800 high and 1,209 medium. Every gap is a modelled screening estimate; read it with its confidence level and note.</p>
+
+<h2 id="packs">Packs and prices</h2><div class="wrap"><table><tr><th>Pack</th><th>Plants</th><th>Gap confidence: high / medium / low / withheld</th><th>Price</th><th></th></tr><tr><td>All sectors (steel, cement, aluminium)</td><td>3,110</td><td>894 / 1,904 / 75 / 237</td><td>€299</td><td><span class="btn disabled" data-pack="all-sectors" aria-disabled="true">Coming soon</span></td></tr><tr><td>Global steel</td><td>910</td><td>94 / 695 / 75 / 46</td><td>€149</td><td><span class="btn disabled" data-pack="steel-global" aria-disabled="true">Coming soon</span></td></tr><tr><td>Global cement</td><td>2,009</td><td>800 / 1,209 / 0 / 0</td><td>€149</td><td><span class="btn disabled" data-pack="cement-global" aria-disabled="true">Coming soon</span></td></tr><tr><td>China</td><td>1,276</td><td>17 / 1,145 / 0 / 114</td><td>€99</td><td><span class="btn disabled" data-pack="country-chn" aria-disabled="true">Coming soon</span></td></tr><tr><td>India</td><td>238</td><td>43 / 145 / 12 / 38</td><td>€49</td><td><span class="btn disabled" data-pack="country-ind" aria-disabled="true">Coming soon</span></td></tr><tr><td>USA</td><td>169</td><td>25 / 136 / 0 / 8</td><td>€49</td><td><span class="btn disabled" data-pack="country-usa" aria-disabled="true">Coming soon</span></td></tr><tr><td>Türkiye</td><td>87</td><td>12 / 73 / 0 / 2</td><td>€49</td><td><span class="btn disabled" data-pack="country-tur" aria-disabled="true">Coming soon</span></td></tr><tr><td>Vietnam</td><td>85</td><td>6 / 76 / 0 / 3</td><td>€49</td><td><span class="btn disabled" data-pack="country-vnm" aria-disabled="true">Coming soon</span></td></tr><tr><td>Indonesia</td><td>35</td><td>27 / 5 / 0 / 3</td><td>€29</td><td><span class="btn disabled" data-pack="country-idn" aria-disabled="true">Coming soon</span></td></tr><tr><td>Canada</td><td>32</td><td>17 / 6 / 0 / 9</td><td>€29</td><td><span class="btn disabled" data-pack="country-can" aria-disabled="true">Coming soon</span></td></tr><tr><td>South Korea</td><td>28</td><td>13 / 15 / 0 / 0</td><td>€29</td><td><span class="btn disabled" data-pack="country-kor" aria-disabled="true">Coming soon</span></td></tr><tr><td>Ukraine</td><td>19</td><td>15 / 4 / 0 / 0</td><td>€29</td><td><span class="btn disabled" data-pack="country-ukr" aria-disabled="true">Coming soon</span></td></tr><tr><td>Taiwan</td><td>15</td><td>5 / 10 / 0 / 0</td><td>€29</td><td><span class="btn disabled" data-pack="country-twn" aria-disabled="true">Coming soon</span></td></tr></table></div><p>Each pack is a zip with data.xlsx (installations, defaults per CN code, data dictionary, sources), data.csv, defaults.csv, data.gpkg (GeoPackage, WGS84), README.html and LICENCE.md.</p>
+<p>Aluminium appears only in the all-sectors and country packs, with defaults, routes and capacity but <strong>no gap</strong>, because the Climate TRACE aluminium figure includes power emissions and isn't comparable with the CBAM direct default. Russian and Belarusian plants are in the global packs, flagged for EU import restrictions.</p>
+
+<noscript><p>Purchase buttons need JavaScript; without it they stay on "Coming soon". Contact laurenz.thiele@gmail.com to buy.</p></noscript>
+<h2 id="levels">The four confidence levels</h2><ul>
+<li><strong>High:</strong> the plant's route matches the route behind the default, the intensity is plausible, and the factor is plant-specific.</li>
+<li><strong>Medium:</strong> informative, with a caveat in <code>gap_note</code> — for example a generic Climate TRACE factor shared by 20+ plants in the country, or a route that differs from the default's.</li>
+<li><strong>Low:</strong> implausible intensity, or a route mismatch against an &quot;Other countries&quot; default.</li>
+<li><strong>Withheld:</strong> no gap given (e.g. induction furnaces, all aluminium); the default is still shown.</li>
+</ul>
+<p>These describe confidence in a modelled estimate, never verified emissions.</p>
+
+<h2>What it is not</h2><ul>
+<li>Not verified, reported or actual emissions, and not &quot;embedded emissions&quot; in the CBAM sense.</li>
+<li>Not for use in CBAM declarations: importers must use verified supplier data or the official defaults.</li>
+<li>Not a list of EU exporters: nothing says a plant sells to the EU.</li>
+<li>Purchased inputs (pig iron, DRI, electricity) aren't modelled.</li>
+<li>Default values are reproduced for convenience; the regulation prevails.</li>
+</ul>
+
+<h2 id="sample">Free sample</h2><p>28 plants in Türkiye: all 3 BF-BOF steel plants, the 15 largest scrap-EAF steel plants and the 10 largest cement plants, selected to show each production route (the full Türkiye pack has 87). Includes sample.html, sample.xlsx and sample.csv.</p>
+
+<p><a class="btn" href="sample.zip" download>Download sample.zip</a> &nbsp; <a href="sample.html">View sample.html</a></p>
+<p>The zip holds the sample as Excel, CSV and HTML, plus <code>LICENCE.md</code>. Free sample: evaluation use only.</p>
+<h2>Updates</h2><p>Buyers can download any new version of the pack they bought released within 12 months of purchase. New versions are released when sources change (for example a new Climate TRACE release or corrected EU default values), at the publisher's discretion; contents may change if a source changes or becomes unavailable. Each release includes a plain-English CHANGES.md. See LICENCE.md section 7.</p>
+
+<h2>Licence</h2><p>One organisation, internal use, including advice and reports for your own clients with short extracts. No resale, sharing or embedding in software without a separate licence. Provided as is, for screening only. Full terms: LICENCE.md.</p>
+<p><a href="licence.html">Read the full licence and terms</a></p>
+<h2>Sources and attribution</h2><ul>
+<li>Climate TRACE Emissions Inventory v5.10.0 (CC BY 4.0), climatetrace.org: iron &amp; steel and cement by Crane and Ebri (2025); aluminium by Crane, Ebri, Underwood and Heal (2025), TransitionZero. Climate TRACE is a trademark of WattTime; credited, not used as this product's brand.</li>
+<li>European Commission, CBAM default values for the definitive period (Excel, 10 August 2026), © European Union, CC BY 4.0. Legally binding values: Implementing Regulation (EU) 2025/2621 as corrected by (EU) 2026/1740.</li>
+<li>Natural Earth (public domain) for country borders.</li>
+</ul>
+
+<h2>Refunds and payment</h2><p>Payments, VAT and refunds are handled by Lemon Squeezy, which sells the packs as merchant of record, under its terms. The data is digital content delivered immediately; see section 9 of the <a href="licence.html">licence</a>.</p>
+<h2>Privacy</h2><p>This website sets no cookies and collects no data. Purchases are processed by Lemon Squeezy, which handles your payment and contact details under its own privacy policy.</p>
+<h2 id="contact">Contact</h2><p><a href="mailto:laurenz.thiele@gmail.com">laurenz.thiele@gmail.com</a></p>
+</main>
+<script>
+document.querySelectorAll("[data-pack]").forEach(function (el) {
+  var url = BUY_LINKS[el.getAttribute("data-pack")];
+  if (url) {
+    var a = document.createElement("a");
+    a.className = "btn"; a.href = url; a.rel = "noopener"; a.textContent = "Buy";
+    el.replaceWith(a);
+  }
+});
+</script>
+<footer><p>© 2026 Laurenz Thiele. Screening data only, not for CBAM declarations.</p></footer>
+</body></html>
